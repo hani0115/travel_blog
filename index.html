@@ -20,10 +20,20 @@
             <!-- 메뉴 -->
              <ul class="main">
                 <li><a href="#" class="act">home</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">destination</a><i class="ri-arrow-down-s-line"></i></li>
-                <li><a href="#">photos</a></li>
-                <li><a href="#">work with me</a></li>
+                <li><a href="#about">about me</a></li>
+                <li class="p-relative"><a href="#">destination
+                    <i class="ri-arrow-down-s-line"></i></a>
+                    <div class="sub">
+                        <a href="#">프랑스 파리</a>
+                        <a href="#">독일 마인츠</a>
+                        <a href="#">이태리 로마</a>
+                        <a href="#">중국 상하이</a>
+                        <a href="#">일본 오사카</a>
+                    </div>
+                </li>
+                <li><a href="#video">video</a></li>
+                <li><a href="#best">best places</a></li>
+                <li><a href="#workme">work with me</a></li>
              </ul>
             <!-- search -->
              <div class="search">
@@ -57,7 +67,7 @@
                     <div class="col-offset-3 col-7">
                         <img src="images/h04.jpg" alt="h04">
                     </div>
-                    <div class="col-offset-6 col-6 hero-card">
+                    <div class="col-offset-6 col-6 hero-card" id="about">
                         <h1 class="vintage">Hello I'm Soony!</h1>
                         <p class="serif">
                             국회의원은 국회에서 직무상 행한 발언과 표결에 관하여 국회외에서 
@@ -113,34 +123,46 @@
         <a href="#" class="subscribe"><i class="ri-youtube-fill"></i>subscribe</a>
         <div class="vod d-flex">
             <div class="vod-box">
-                <video class="myvideo">
+                <video class="myvideo" muted>
                     <source src="vod/001.mp4" type="video/mp4">
                     <!-- 비디오 링크는 source-->
                     웹브라우저가 video를 인식하지 못합니다. 업그레이드 하세요.
                 </video>
-                <div class="myvideo-btn"></div>
+                <div class="myvideo-btn" data-vdo="001.mp4"></div>
                 <p class="text-center">Australia’s Most Beautiful <br>
                     Island on a Budget</p>
             </div>
             <div class="vod-box">
-                <video class="myvideo">
+                <video class="myvideo" muted>
                     <source src="vod/002.mp4" type="video/mp4">
                     <!-- 비디오 링크는 source-->
                     웹브라우저가 video를 인식하지 못합니다. 업그레이드 하세요.
                 </video>
-                <div class="myvideo-btn"></div>
+                <div class="myvideo-btn" data-vdo="002.mp4"></div>
                 <p class="text-center">My Solo Trip to Alaska <br> 
                     6-Days in Paradise</p>
             </div>
             <div class="vod-box">
-                <video class="myvideo">
+                <video class="myvideo" muted>
                     <source src="vod/003.mp4" type="video/mp4">
                     <!-- 비디오 링크는 source-->
                     웹브라우저가 video를 인식하지 못합니다. 업그레이드 하세요.
                 </video>
-                <div class="myvideo-btn"></div>
+                <div class="myvideo-btn" data-vdo="003.mp4"></div>
                 <p class="text-center">Luxury Thailand Experience. <br>
                     The Perfect Getaway</p>
+            </div>
+        </div>
+        <!-- 비디오 팝업창 -->
+        <div class="vdo-popup-back" id="vdo-back">
+            <div class="vdo-popup">
+                <video controls id="viewvideo">
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+            <div class="close">
+                <span></span>
+                <span></span>
             </div>
         </div>
      </section>
@@ -245,8 +267,24 @@
          </section>
 
          <footer>
-            <nav></nav>
-            <div class="sns-box"></div>
+            <nav>
+                <ul class="main2">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about me</a></li>
+                    <li><a href="#">destination</a></li>
+                    <li><a href="#">video</a></li>
+                    <li><a href="#">best places</a></li>
+                    <li><a href="#">work with me</a></li>
+                </ul>
+            </nav>
+            <div class="sns-box">
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-kakao-talk-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+            <div class="col-12">
+                <hr class="hr2">
+            </div>
             <div class="copyright">
                 <p class="text-center">
                     Copyleft &copy; Hani's all copy Reserved. <!-- &copy;가 저작권 표시-->
